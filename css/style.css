@@ -1,0 +1,907 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+body{
+    height: 7000px;
+ }
+  .class1{
+    width: 100%;  
+    height: 50px;
+    background-color:black;
+    top: 0;
+    left: 0;
+    position: fixed;
+    opacity: 0.7;
+    z-index: 1;
+}
+.li1{
+display: inline-block;
+margin-left: 30px;
+margin-top: 15px;
+}
+.li1 a{
+    color:red;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    float: right;
+    margin-right: 150px;
+}
+.heder-img{
+    margin-left: 100px;
+}  
+.home{
+    height: 100vh;
+    background-image: url(../images/mony.jpg);
+    background-size: cover;
+    position: relative;
+}
+  .home-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:black;
+    opacity: 0.8;
+}
+.home-content{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50% );
+    text-align: center;
+}
+.home-title{
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.home-p{
+    color: white;
+    letter-spacing: 2px;
+    margin: 20px 0px;
+}
+.home-btn{
+    width: 150px;
+    padding: 15px 0px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.btn-learn{
+background-color:blue;
+color: #fff;
+margin-left: 10px;
+}
+.home-btn:hover{
+    opacity: 0.7;
+}
+/* ///////////////////////////////////////الجزء الاول //////////////////////////////////////// */
+.web{
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+}
+.web-title1{
+    width: 60px;
+    height: 5px;
+    background-color: blue;
+    border: none;
+    margin: auto;
+}  
+.web-title{
+width: 500px;
+margin: auto;
+font-size: 30px;
+text-align: center;
+padding-top: 50px;
+}
+.web-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+}
+.web-div1 , .web-div3{
+    width: 350px;
+    height: 250px;
+    border: 1px solid black;
+    float: left;
+    position: relative;
+    margin-top: 50px;
+}
+ .web-div2{
+    width: 350px;
+    height: 250px;
+    border: 1px solid black;
+    float: left;
+    margin: 0px 7%;
+    position: relative;
+    margin-top: 50px;
+}
+.web-div4{
+    color: blue;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.web-title2{
+    text-align: center;
+}
+.web-p{
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    margin: 25px 0px;
+}
+.web-a{
+    text-decoration: none;
+     margin-left: 120px; 
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.web-div1:after , .web-div2:after , .web-div3:after{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+}
+.web-div1:hover::after , .web-div2:hover::after , .web-div3:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transition: .5s;
+    z-index: -1;
+}
+.web-div1:hover , .web-div2:hover , .web-div3:hover{
+    color: white;
+}
+.web-div1:hover .web-p , .web-div2:hover .web-p , .web-div3:hover .web-p{
+    color: white;
+}
+.web-div1:hover .web-a , .web-div2:hover .web-a , .web-div3:hover .web-a{
+    color: rgb(68, 139, 238);
+}
+/* /////////////////////////////////////////الجزء الثاني//////////////////////////////////////////// */
+.work{
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
+}
+.work-contanire1{
+    width: 80%;
+    margin: auto;
+}
+.work-conteant-title{
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+}
+.work-conteant-line{
+    width: 60px;
+    height: 5px;
+    background-color: blue;
+    border: none;
+    margin: auto;
+}
+.work-overlay a i {
+    line-height: 50px;
+}
+.div-icons .sha{
+    width: 50px;
+    height: 50px;
+    margin-left: 90px;
+    cursor: pointer;
+    background-color: rgb(55, 145, 247);
+    float: left;
+}
+ .div-icons .shah{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: rgb(55, 145, 247);
+    float: left;
+}  
+.div-icons .sha , .div-icons .shah{
+color: #fff;
+font-size: 25px;
+}
+.work-item-1{
+    float: left;
+    width: 28%;
+    height: 250px;
+    padding: 16px 16px;
+    background-color: rgb(194, 191, 191);
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+.am{
+    margin: 0px 4%;
+}
+.work-content-1{
+    overflow: auto;
+}
+.work-image-1{
+width: 90%;
+margin: auto;
+position: relative;
+}
+.work-image-1 img{
+    width: 100%;
+    height: 100%;
+}
+.work-overlay{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50% , -50% );
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.work-item-1:hover .work-overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.work-item-1:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+    transform: .7s;
+}
+.work-item-1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    transition: 1s;
+}
+.work-item-1:hover .icons{
+    transition: 2s;
+}
+.work-item-1:hover .category{
+    color: red;
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.work-item-1:hover .lorem{
+    color:black;
+    transition: 1.5s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 27px;
+}
+/* ///////////////////////////////////////////الجزء التالت////////////////////////////////////// */
+.offer{
+    width: 100vw;
+    height: 100vh; 
+}
+.offer-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+}
+.offer-title{
+    width: 500px;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+    }
+    .offer-titel-1{
+        width: 60px;
+        height: 5px;
+        background-color: blue;
+        border: none;
+        margin: auto;
+    }
+    .offer-div1{
+        width: 350px;
+        height: 200px;
+        border: 1px solid black;
+        float: left;
+        position: relative;
+    }
+     .offer-div2 {
+        width: 350px;
+        height: 200px;
+        border: 1px solid black;
+        float: left;
+        position: relative;
+        margin: 0px 7%;
+    
+    }
+    .offer-div3{
+        width: 350px;
+        height: 200px;
+        border: 1px solid black;
+        float: left;
+        position: relative;
+    }
+    .offer-div4{
+        width: 350px;
+        height: 200px;
+        border: 1px solid black;
+        float: left;
+        position: relative;
+        margin-top: 30px;
+    }
+    .offer-div5{
+        width: 350px;
+        height: 200px;
+        border: 1px solid black;
+        float: left;
+        position: relative;
+        margin: 0px 7%;
+        margin-top: 30px;
+    }
+    .offer-div6{
+        width: 350px;
+        height: 200px;
+        border: 1px solid black;
+        float: left;
+        position: relative;
+        margin-top: 30px;
+    }  
+    .offer-div7{
+        color: blue;
+        margin-left: 10px;
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .offer-title2{
+        text-align: center;
+        font-size: 30px;
+        margin-top: -40px;
+    }
+    .offer-p{
+        color: gray;
+        text-align: center;
+        font-size: 25px;
+        margin: 25px;
+        letter-spacing: 2px;
+    }
+    .offer-div1:after , .offer-div2:after , .offer-div3:after , .offer-div4:after  , .offer-div5:after  , .offer-div6:after {
+        content:"";
+        position: absolute;
+        width: 0;
+        height: 100%;
+    
+         top: 0;
+        left: 0;
+        background-color: black;
+        opacity: 0;
+        transition: 0.8s;
+    }
+    .offer-div1:hover::after , .offer-div2:hover::after , .offer-div3:hover::after , .offer-div4:hover::after , .offer-div5:hover::after , .offer-div6:hover::after{
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        transition: 1s;
+        z-index: -1;
+    }
+    .offer-div1:hover , .offer-div2:hover , .offer-div3:hover , .offer-div4:hover , .offer-div5:hover , .offer-div6:hover{
+        color: white;
+    }
+    .offer-div1:hover .offer-p , .offer-div2:hover .offer-p , .offer-div3:hover .offer-p , .offer-div4:hover .offer-p , .offer-div5:hover .offer-p , .offer-div6:hover .offer-p{
+        color:black;
+    }
+    /* /////////////////////////////////////الجزء الرابع//////////////////////////////////////// */
+    .why{
+        width: 100vw;
+        height: 90vh;
+        background-color: beige;
+    }
+    .why-container{
+        width: 80%;
+        margin: auto;
+    }
+     .why-title{
+        font-size: 25px;
+        padding-top: 60px;
+        }
+        .why-titel-1{
+            width: 60px;
+            height: 5px;
+            background-color: blue;
+            border: none;
+        } 
+        .why-div1{
+            width: 500px;
+            height: 100px;
+            margin-top: 60px;
+            line-height: 30px;
+            font-size: 18px;
+            color: grey;
+        }
+        .why-div2{
+            width: 500px;
+            height: 250px;
+            margin-top: 10px;
+            font-size: 25px;
+            line-height: 50px;
+            float: left;
+            color: gray;
+        }
+        .why-image{
+        float: right;
+        margin-right: 100px;
+        margin-top: -70px;
+        } 
+        .icon1{
+            color: blue;
+        }
+        .why-div3{
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+            background-color: rgb(19, 146, 209);
+        }
+        .why-div4{
+            width: 15px;
+            height: 15px;
+            margin-top: 300px;
+            margin-left: 825px;
+        }
+        .why-div5{
+            width:15px;
+            height: 15px;
+            margin-top: -15px;
+            margin-left: 843px;
+        }
+        .why-div6{
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        .why-div6:hover , .why-div7:hover{
+            background-color:rgb(19, 146, 209);
+        }
+        .why-div7{
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            margin-left: 860px;
+            margin-top: -15px;
+            border: 1px solid black;
+        }
+/* ////////////////////////////////////////الجزء الخامس////////////////////////////////////////// */
+.div1{
+    width: 100vw;
+    height: 60vh;
+    background-image: url(../images/sara.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+}
+.div2-container{
+    width: 70%;
+    margin: auto;
+    padding-top: 100px;
+} 
+.div3{
+        width: 220px;
+        height: 150px;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 50px;
+        float: left;
+        color: #fff;
+     }
+     .div4 , .div5{
+        width: 220px;
+        height: 150px;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 50px;
+        float: left;
+        margin-left: 60px;
+        color: #fff;
+     }
+     .div6{
+        width: 220px;
+        height: 150px;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 50px;
+        float: right;
+        color: #fff;
+     } 
+    .icon{
+        color: blue;
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+    /* //////////////////////////////////////الجزء السادس///////////////////////////////////// */
+    .pricing{
+        width: 100vw;
+        height: 90vh;
+        position: relative;
+    }
+    .pricing-container{
+        width: 80%;
+        margin: auto;
+        padding-top: 70px;
+    }
+    H1{
+        text-align: center;
+        font-size: 50px;
+    }
+    .p1{
+        line-height: 30px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .pricing-conteant-line{
+        width: 60px;
+        height: 5px;
+        background-color: blue;
+        border: none;
+        margin: auto;
+    }
+    .parent{
+        margin-top: 70px;
+    }
+    .pricing-c1{
+        margin-top: 20px;
+    }
+    .pricing-div1{
+        width: 350px;
+        height: 370px;
+        border: 1px solid black;
+        text-align: center;
+        float: left;
+        position: relative;
+    }
+    .pricing-div2{
+        width: 350px;
+        height: 370px;
+        border: 1px solid black;
+        text-align: center;
+        float: left;
+        margin-left: 85px;
+        position: relative;
+    }
+    .pricing-div3{
+        width: 350px;
+        height: 370px;
+        border: 1px solid black;
+        text-align: center;
+        float: right;
+        position: relative;
+    }
+    .pricing-div4{
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        margin: auto;
+        border: 2px solid blue;
+    }
+    .b1{
+        border: none;
+        width: 130px;
+        height: 30px;
+        cursor: pointer;
+    }
+    h4{
+        font-size: 80px;
+    }
+    h5{
+        font-size: 20px;  
+    }
+    .pricing-div1:after , .pricing-div2:after , .pricing-div3:after{
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 0;
+    
+        top: 0;
+        right: 0;
+        background-color: black;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .pricing-div1:hover::after , .pricing-div2:hover::after , .pricing-div3:hover::after{
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        transition: 1s;
+        z-index: -1;
+    }
+    .pricing-div1:hover , .pricing-div2:hover , .pricing-div3:hover{
+    color: #fff;
+    }
+    .pricing-div1:hover .pricing-c1 , .pricing-div2:hover .pricing-c1 , .pricing-div3:hover .pricing-c1{
+        color:red;
+  }
+    /* ////////////////////////////////////////الجزء السابع/////////////////////////////////////////// */
+    .im-div1{
+        width: 100vw;
+        height: 60vh;
+        background-image: url(../images/amany.jpg);
+         background-size: cover; 
+        background-attachment: fixed; 
+    }
+    .im-container{
+        width: 70%;
+        margin: auto;
+        padding-top: 100px;
+    }
+    .im-div2{
+    width: 500px;
+    height: 300px;
+    float: left;
+    } 
+   .im-div3 , .im-div7{
+        width: 140px;
+        height: 140px;
+        background-image: url(../images/girl.jpg);
+        background-size: cover;
+        border-radius: 70px;
+        float: left; 
+    } 
+    .im-div4 , .im-div8{
+        width: 250px;
+        height: 120px;
+        float: left;
+        margin-left: 10px;
+        margin-top: 30px;
+        font-size: 20px;
+        color: blue;
+    }
+    .div-h4 , .div-h8{
+        font-size: 27px;
+        color:white;
+    }
+    .im-div5 , .im-div9{
+            width: 490px;
+            height: 100px;
+            float: left;
+            margin-top: 10px;
+            margin-left: 20px;
+            font-size: 20px;
+            color: #fff;
+        }
+        .im-div6{
+            width: 500px;
+            height: 300px;
+            float: right;
+        } 
+        /* ////////////////////////////////////////الجزء الثامن////////////////////////////////////////// */
+      .container{
+        width: 80%;
+        height: 90vh;
+        margin: auto;
+        
+     }  
+     .team-content{
+        overflow: auto;
+        margin-top: 50px;
+     }
+     .our-team{
+        text-align: center;
+        margin-top: 100px;
+        font-size: 30px;
+    }
+    .our-team1{
+        width: 60px;
+        height: 5px;
+        background-color: blue;
+        border: none;
+        margin: auto;
+    } 
+    .team-item {
+        float: left;
+        width: 28%;
+        margin-left: 30px;
+        background-color: rgb(220, 219, 219);
+        padding: 19px 16px;
+        text-align: center;
+        margin-top: 50px;
+        position: relative;
+    }
+    .team-img{
+        width: 90%;
+        margin: auto;
+        position: relative;
+    }
+    .team-img img{
+        width: 90%;
+    }  
+    .team-ovarlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:rgba(93, 103, 121, 0.5);
+     visibility: hidden;
+    opacity: 0; 
+    }
+    .team-item:hover .team-ovarlay{
+        visibility: visible;
+        opacity: 1;
+    }
+    .team-ovarlay a{
+        display: block;
+        width: 40px;
+        height:40px;
+        margin-left: auto;
+        color: #fff;
+        font-size: 20px;
+        background-color: rgb(53, 149, 246);
+    }
+    .team-ovarlay a i{
+        line-height: 40px;
+    }
+    .team-info-title1{
+        text-transform: uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .team-info-text{
+        text-transform: capitalize;
+        color:blue;
+    }
+    .team-item:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0;
+        top: 0;
+        right: 0;
+        background-color: rgb(62, 56, 56);
+        opacity: 0;
+    }
+    .team-item:hover::after{
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        transition: 1s;
+    }
+    .team-item:hover .team-info-text {
+        color: #fff;
+    }
+    .team-item:hover .team-info-title1{
+        color:red
+    }
+/* //////////////////////////////////////////الجزء التاسع//////////////////////////////////////////// */
+ .container-news{
+    width: 80%;
+    margin: auto;
+    background-color: beige;
+    height: 100vh;
+ }  
+ .news-team{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 100px;
+}
+.news-team1{
+    width: 60px;
+    height: 5px;
+    background-color: blue;
+    border: none;
+    margin: auto;
+}
+.news-item{
+    width: 350px;
+    height: 530px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 80px;
+    position: relative;
+} 
+.news-p-1 , .news-p-3{
+float: left;
+margin-top: 10px;
+}
+.news-p-2{
+  float: left;  
+  margin: 10px 10px;
+}
+.news-img {
+    margin-left: 25px;
+}
+.news-h3{
+    font-size: 22px;
+}
+.news-span{
+    color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.news-a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(0, 115, 255);
+} 
+.news-ovarlay i{
+    color: blue;
+}
+.news-item:after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 0;
+
+     top: 0;
+    left: 0;
+    background-color: rgb(55, 158, 255);
+    opacity: 0;
+    transition: 0.5s;
+}
+.news-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+/* ////////////////////////////////////// الجزء العاشر/////////////////////////////////////////// */
+.how{
+    margin-top: 15px;
+    width: 100vw;
+    height: 45vh;
+    background-color: gray;
+}
+.how-img{
+    width: 200px;
+    height: 100px;
+    padding-top: 70px;
+    margin: auto;
+}
+.how-div1{
+    width: 380px;
+    height: 70px;
+    padding-top: 20px;
+    margin: auto;
+}
+ .how-div2{
+    width: 50px;
+    height: 50px;
+    padding: auto;
+    margin-left: 10px;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(55, 145, 247);
+    float: left;
+}  
+.how-div2:hover{
+    background-color: blue;
+}
+.how-div2 .sara{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 15px; 
+}
+.how-p{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+/* ////////////////////////////////////////////الجزء الحادي عشر/////////////////////////////////// */
+
+
+
+
